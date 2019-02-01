@@ -1,9 +1,0 @@
-60d2be804d929f5a35a86b3256750bc9
-"use strict";
-
-describe('hello', () => {
-    it('should be 2', () => {
-        expect(2).toBe(2);
-    });
-});
-//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9qaW5zaGluL1Byb2plY3RzL2JvaWxlcnBsYXRlL1JOTkJvaWxlcnBsYXRlL3NyYy9mbG93cy9FeGFtcGxlL19fdGVzdF9fL0V4YW1wbGUudGVzdC50c3giXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7QUFBQSxTQUFTLE9BQVQsRUFBa0IsTUFBSztBQUNyQixPQUFHLGFBQUgsRUFBa0IsTUFBSztBQUNyQixlQUFPLENBQVAsRUFBVSxJQUFWLENBQWUsQ0FBZjtBQUNELEtBRkQ7QUFHRCxDQUpEIiwic291cmNlc0NvbnRlbnQiOlsiZGVzY3JpYmUoJ2hlbGxvJywgKCkgPT4ge1xuICBpdCgnc2hvdWxkIGJlIDInLCAoKSA9PiB7XG4gICAgZXhwZWN0KDIpLnRvQmUoMilcbiAgfSlcbn0pXG4iXX0=

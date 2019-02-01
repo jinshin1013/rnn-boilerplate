@@ -1,1 +1,0 @@
-{"version":3,"sources":["/Users/jinshin/Projects/boilerplate/RNNBoilerplate/src/flows/Example/__test__/Example.test.tsx"],"names":[],"mappings":";;AAAA,SAAS,OAAT,EAAkB,MAAK;AACrB,OAAG,aAAH,EAAkB,MAAK;AACrB,eAAO,CAAP,EAAU,IAAV,CAAe,CAAf;AACD,KAFD;AAGD,CAJD","sourcesContent":["describe('hello', () => {\n  it('should be 2', () => {\n    expect(2).toBe(2)\n  })\n})\n"]}
