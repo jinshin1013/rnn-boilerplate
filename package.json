@@ -3,12 +3,12 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
-    "start": "export RN_FLAVOUR='' && node node_modules/react-native/local-cli/cli.js start",
-    "start-e2e": "export RN_FLAVOUR=E2E && node node_modules/react-native/local-cli/cli.js start",
+    "start": "export RN_FLAVOUR='' && react-native start",
+    "start:nocache": "export RN_FLAVOUR='' && react-native start --reset-cache",
+    "start:e2e": "export RN_FLAVOUR=E2E && react-native start --reset-cache",
     "ios": "react-native run-ios",
     "android": "cd ./android && ./gradlew app:assembleDebug && ./gradlew installDebug",
-    "test": "jest",
-    "tsc": "tsc"
+    "test": "jest"
   },
   "dependencies": {
     "hoist-non-react-statics": "3.2.1",
