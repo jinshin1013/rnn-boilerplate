@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import * as React from 'react'
 import { StyleSheet, Text, View, ScrollView, Button } from 'react-native'
 import { Options, Navigation } from 'react-native-navigation'
 import { publicRoute } from 'navigation/public/routes'
@@ -7,7 +7,7 @@ interface Props {
   componentId: string
 }
 
-export class Example2 extends Component<Props> {
+export class Example2 extends React.Component<Props> {
   static options(): Options {
     return {
       topBar: {

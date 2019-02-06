@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import * as React from 'react'
 import { StyleSheet, Text, View, Button, ScrollView } from 'react-native'
 import { Navigation, Options } from 'react-native-navigation'
 import { publicRoute } from 'navigation/public/routes'
@@ -7,7 +7,7 @@ interface Props {
   componentId: string
 }
 
-export class Example extends Component<Props> {
+export class Example extends React.Component<Props> {
   static options(): Options {
     return {
       topBar: {
@@ -31,13 +31,6 @@ export class Example extends Component<Props> {
                   name: publicRoute.example2,
                 },
               })
-            }}
-          />
-
-          <Button
-            title="Pop to root"
-            onPress={() => {
-              Navigation.popToRoot(this.props.componentId)
             }}
           />
         </View>
