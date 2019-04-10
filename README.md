@@ -16,3 +16,31 @@ typescript: "3.4.1"
 
 ### Others
 This project utilise ram bundles and inline require turned on. 
+
+### Project Structure
+The structure of the project is as follows:
+
+```tsx
+
+src/
+-- app/
+---- index.ts       // Initial point of the app initialization
+
+-- flows/           // Screens are grouped in different Flows. IE, Auth flow might have Login, Signup and Lock screens 
+---- Auth/
+---- Dashboard/
+
+-- navigation/      // Files related to navigation
+---- config/        // react-native-navigation configuration. I personally use it for common navigation styles
+------ noBorderTopbar.ts // rnn TopBar border style
+------ rightAddButton.ts // rnn TopBar right button
+
+---- {public, private}/
+------ routes.ts    // list of route strings
+------ screens.ts   // Screen Map object with screen components and route name
+------ provider.ts  // HOC provider which wraps each screen with Mobx Provider
+
+-- store/
+---- rootStore.ts   // Follow Mobx RootStore pattern 
+
+```
