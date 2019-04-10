@@ -2,10 +2,11 @@ apply plugin: "com.android.application"
 
 import com.android.build.OutputFile
 
-project.ext.react = [ entryFile: "index.js" ]
-
+project.ext.react = [ 
+    entryFile: "index.js",
+    bundleCommand: "ram-bundle",
+]
 apply from: "../../node_modules/react-native/react.gradle"
-
 def enableSeparateBuildPerCPUArchitecture = false
 def enableProguardInReleaseBuilds = false
 
@@ -20,9 +21,6 @@ android {
         missingDimensionStrategy "RNN.reactNativeVersion", "reactNative57_5"
         versionCode 1
         versionName "1.0"
-        ndk {
-            abiFilters "armeabi-v7a", "x86"
-        }
     }
 
     compileOptions {
@@ -35,7 +33,7 @@ android {
             reset()
             enable enableSeparateBuildPerCPUArchitecture
             universalApk false  // If true, also generate a universal APK
-            include "armeabi-v7a", "x86"
+            include "armeabi-v7a", "x86", "arm64-v8a", "x86_64"
         }
     }
     buildTypes {
@@ -47,7 +45,7 @@ android {
     // applicationVariants are e.g. debug, release
     applicationVariants.all { variant ->
         variant.outputs.each { output ->
-            def versionCodes = ["armeabi-v7a":1, "x86":2]
+            def versionCodes = ["armeabi-v7a":1, "x86":2, "arm64-v8a": 3, "x86_64": 4]
             def abi = output.getFilter(OutputFile.ABI)
             if (abi != null) {
                 output.versionCodeOverride =
@@ -57,15 +55,34 @@ android {
     }
 }
 
-configurations.all {
-    resolutionStrategy {
-        force 'org.webkit:android-jsc:r236355'
+subprojects { subproject ->
+    afterEvaluate {
+        if ((subproject.plugins.hasPlugin('android') || subproject.plugins.hasPlugin('android-library'))) {
+            android {
+                compileSdkVersion rootProject.ext.compileSdkVersion
+                buildToolsVersion rootProject.ext.buildToolsVersion
+
+                variantFilter { variant ->
+                    def names = variant.flavors*.name
+                    if (
+                        names.contains("reactNative51") || 
+                        names.contains("reactNative55") || 
+                        names.contains("reactNative56") ||
+                        names.contains("reactNative57")
+                    ) {
+                        setIgnore(true)
+                    }
+                }
+            }
+        }
     }
-    
+}
+
+configurations.all {
     resolutionStrategy.eachDependency { DependencyResolveDetails details ->
         def requested = details.requested
         if (requested.group == 'com.android.support' && requested.name != 'multidex') {
-            details.useVersion "${rootProject.ext.supportLibVersion}"
+            details.useVersion rootProject.ext.supportLibVersion // <- Change this to whatever version you're using
         }
     }
 }
