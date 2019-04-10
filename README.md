@@ -1,4 +1,6 @@
-This repo is a react-native boilerplate project integrated with react-native-navigation
+This repo is a react-native boilerplate project integrated with react-native-navigation.
+It's a minimal setup to get you started with the latest react native and react native navigation. I have added
+Mobx into this project, but it should be straightforward enough to replace to Redux or any other packages.
 
 ### Current Dependencies
 ```js
