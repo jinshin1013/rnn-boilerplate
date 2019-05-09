@@ -16,16 +16,16 @@
     "mobx-persist": "0.4.1",
     "mobx-react": "5.4.3",
     "react": "16.8.6",
-    "react-native": "0.59.4",
-    "react-native-navigation": "2.17.0"
+    "react-native": "0.59.8",
+    "react-native-navigation": "2.18.5"
   },
   "devDependencies": {
     "@babel/core": "7.3.4",
     "@babel/plugin-proposal-decorators": "7.3.0",
     "@types/hoist-non-react-statics": "3.3.0",
     "@types/jest": "24.0.11",
-    "@types/react": "16.8.10",
-    "@types/react-native": "0.57.42",
+    "@types/react": "16.8.16",
+    "@types/react-native": "0.57.53",
     "@types/react-test-renderer": "16.0.3",
     "babel-core": "7.0.0-bridge.0",
     "babel-plugin-module-resolver": "3.1.3",
