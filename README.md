@@ -4,18 +4,19 @@ Mobx into this project, but it should be straightforward enough to replace to Re
 
 ### Current Dependencies
 ```js
-react: "16.8.6"
-react-native: "0.59.3"
-react-native-navigation: "2.17.0"
-mobx: "5.9.4"
-mobx-react: "5.4.3"
+react: "16.9.0"
+react-native: "0.61.5"
+react-native-navigation: "4.0.0"
+mobx: "4.15.0"
+mobx-react: "6.1.4"
 mobx-persist: "0.4.1"
 
-typescript: "3.4.1"
+typescript: "3.7.2"
 ```
 
 ### Others
-This project utilise ram bundles and inline require turned on. 
+- This project utilise ram bundles and inline require turned on. 
+- This project also uses Hermes so `mobx@4.15.0` is used as Hermes does not support JavaScript Proxies.
 
 ### Project Structure
 The structure of the project is as follows:
@@ -32,6 +33,7 @@ src/
 
 -- navigation/      // Files related to navigation
 ---- config/        // react-native-navigation configuration. I personally use it for common navigation styles
+------ defaultOptions.ts // rnn navigation default options
 ------ noBorderTopbar.ts // rnn TopBar border style
 ------ rightAddButton.ts // rnn TopBar right button
 
