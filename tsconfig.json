@@ -16,5 +16,12 @@
     },
     "experimentalDecorators": true
   },
-  "exclude": ["node_modules"]
+  "exclude": [
+    "node_modules",
+    "babel.config.js",
+    "metro.config.js",
+    "jest.config.js",
+    "e2e",
+    "__test__/**/*-test.{ts,tsx}"
+  ]
 }

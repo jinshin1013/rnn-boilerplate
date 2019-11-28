@@ -1,23 +1,21 @@
-import * as React from 'react'
-import {} from 'react-native'
+import React from 'react'
 import { Provider } from 'mobx-react'
-import hoistNonReactStatic from 'hoist-non-react-statics'
+import { Options } from 'react-native-navigation'
 import { RootStore } from 'store/rootStore'
+import { RootType } from 'navigation/types'
 
 export const createPrivateProvider = (
-  WrappedComponent: React.ComponentType,
+  WrappedComponent: React.FC & { options?: Options },
   rootStore: RootStore
 ) => {
-  class HOC extends React.Component {
-    render() {
-      return (
-        <Provider rootStore={rootStore}>
-          <WrappedComponent {...this.props} />
-        </Provider>
-      )
-    }
+  const HOC: RootType<{}> = (props) => {
+    return (
+      <Provider rootStore={rootStore}>
+        <WrappedComponent {...props} />
+      </Provider>
+    )
   }
 
-  hoistNonReactStatic(HOC, WrappedComponent)
+  HOC.options = WrappedComponent.options
   return HOC
 }

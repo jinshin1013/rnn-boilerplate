@@ -6,7 +6,8 @@ buildscript {
         minSdkVersion = 21
         compileSdkVersion = 28
         targetSdkVersion = 28
-        supportLibVersion = "28.0.0" 
+        kotlinVersion = '1.3.41'
+        detoxKotlinVersion = ext.kotlinVersion
     }
     repositories {
         google()
@@ -15,7 +16,8 @@ buildscript {
         jcenter()
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:3.3.1'
+        classpath('com.android.tools.build:gradle:3.4.2')
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlinVersion"
     }
 }
 
@@ -27,5 +29,9 @@ allprojects {
         jcenter()
         maven { url "$rootDir/../node_modules/react-native/android" }
         maven { url 'https://jitpack.io' }
+        maven {
+            // Android JSC is installed from npm
+            url("$rootDir/../node_modules/jsc-android/dist")
+        }
     }
 }

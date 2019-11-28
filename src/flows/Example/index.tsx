@@ -1,59 +1,41 @@
-import * as React from 'react'
-import { StyleSheet, Text, View, Button, ScrollView } from 'react-native'
-import { Navigation, Options } from 'react-native-navigation'
+import React, { useCallback } from 'react'
+import { Text, View, Button, ScrollView } from 'react-native'
 import { publicRoute } from 'navigation/public/routes'
+import { NavigationHelpers } from 'navigation/functions'
+import { RootType } from 'navigation/types'
 
-interface Props {
+import styles from './styles'
+
+interface ExampleProps {
   componentId: string
 }
 
-export class Example extends React.Component<Props> {
-  static options(): Options {
-    return {
-      topBar: {
-        noBorder: false,
-        title: { text: 'Example 1' },
-        largeTitle: { visible: true },
-      },
-    }
-  }
+const Example: RootType<ExampleProps> = ({ componentId }) => {
+  const onPress = useCallback(() => {
+    NavigationHelpers.pushTo(componentId, {
+      name: publicRoute.example2
+    })
+  }, [componentId])
 
-  render() {
-    return (
-      <ScrollView contentContainerStyle={{ flex: 1 }}>
-        <View style={styles.container}>
-          <Text style={styles.welcome}>Welcome to Example 1!</Text>
-          <Button
-            title="Navigate to Next"
-            onPress={() => {
-              Navigation.push(this.props.componentId, {
-                component: {
-                  name: publicRoute.example2,
-                },
-              })
-            }}
-          />
-        </View>
-      </ScrollView>
-    )
-  }
+  return (
+    <ScrollView contentContainerStyle={{ flex: 1 }}>
+    <View style={styles.container}>
+      <Text style={styles.welcome}>Welcome to Example 1!</Text>
+      <Button
+        title="Navigate to Next"
+        onPress={onPress}
+      />
+    </View>
+  </ScrollView>
+  )
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-    backgroundColor: '#F5FCFF',
+Example.options = {
+  topBar: {
+    noBorder: false,
+    title: { text: 'Example 1' },
+    largeTitle: { visible: true },
   },
-  welcome: {
-    fontSize: 20,
-    textAlign: 'center',
-    margin: 10,
-  },
-  instructions: {
-    textAlign: 'center',
-    color: '#333333',
-    marginBottom: 5,
-  },
-})
+}
+
+export { Example }
