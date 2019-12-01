@@ -1002,13 +1002,6 @@
   resolved "https://registry.yarnpkg.com/@types/eslint-visitor-keys/-/eslint-visitor-keys-1.0.0.tgz#1ee30d79544ca84d68d4b3cdb0af4f205663dd2d"
   integrity sha512-OCutwjDZ4aFS6PB1UZ988C4YgwlBHJd6wCeQqaLdmadZ/7e+w79+hbMUFC1QXDNCmdyoRfAFdm0RypzwR+Qpag==
 
-"@types/hoist-non-react-statics@3.3.0":
-  version "3.3.0"
-  resolved "https://registry.yarnpkg.com/@types/hoist-non-react-statics/-/hoist-non-react-statics-3.3.0.tgz#a59c0c995cc885bef1b8ec2241b114f9b35b517b"
-  integrity sha512-O2OGyW9wlO2bbDmZRH17MecArQfsIa1g//ve2IJk6BnmwEglFz5kdhP1BlgeqjVNH5IHIhsc83DWFo8StCe8+Q==
-  dependencies:
-    "@types/react" "*"
-
 "@types/istanbul-lib-coverage@*", "@types/istanbul-lib-coverage@^2.0.0":
   version "2.0.1"
   resolved "https://registry.yarnpkg.com/@types/istanbul-lib-coverage/-/istanbul-lib-coverage-2.0.1.tgz#42995b446db9a48a11a07ec083499a860e9138ff"
@@ -3250,13 +3243,6 @@ hermes-engine@^0.2.1:
   version "0.2.1"
   resolved "https://registry.yarnpkg.com/hermes-engine/-/hermes-engine-0.2.1.tgz#25c0f1ff852512a92cb5c5cc47cf967e1e722ea2"
   integrity sha512-eNHUQHuadDMJARpaqvlCZoK/Nitpj6oywq3vQ3wCwEsww5morX34mW5PmKWQTO7aU0ck0hgulxR+EVDlXygGxQ==
-
-hoist-non-react-statics@3.3.0:
-  version "3.3.0"
-  resolved "https://registry.yarnpkg.com/hoist-non-react-statics/-/hoist-non-react-statics-3.3.0.tgz#b09178f0122184fb95acf525daaecb4d8f45958b"
-  integrity sha512-0XsbTXxgiaCDYDIWFcwkmerZPSwywfUqYmwT4jzewKTQSWoE6FCMoUVOeBJWK3E/CrWbxRG3m5GzY4lnIwGRBA==
-  dependencies:
-    react-is "^16.7.0"
 
 hoist-non-react-statics@3.x.x:
   version "3.3.1"
@@ -5617,10 +5603,10 @@ react-lifecycles-compat@2.0.0:
   resolved "https://registry.yarnpkg.com/react-lifecycles-compat/-/react-lifecycles-compat-2.0.0.tgz#71d9c4cde47114c4102454f76da055c2bc48c948"
   integrity sha512-txfpPCQYiazVdcbMRhatqWKcAxJweUu2wDXvts5/7Wyp6+Y9cHojqXHsLPEckzutfHlxZhG8Oiundbmp8Fd6eQ==
 
-react-native-navigation@4.0.0:
-  version "4.0.0"
-  resolved "https://registry.yarnpkg.com/react-native-navigation/-/react-native-navigation-4.0.0.tgz#3e73e2cf2d30a44e74e1db8fa2edf0fbf6410e4a"
-  integrity sha512-hYkro/zU5+K0x1VY3Gr0x9PDuu2b+/SbDd3fKZDxtGoCfltOs1xXW4m4MIYcW6WfEwMuBXr6/BXc1SwQDetkrg==
+react-native-navigation@4.0.2:
+  version "4.0.2"
+  resolved "https://registry.yarnpkg.com/react-native-navigation/-/react-native-navigation-4.0.2.tgz#171cf65c29cad70c7e227f3ad4575e91d66020ba"
+  integrity sha512-bc8vWL76IGnAeg3F59S9LBhzVHHPAKDIKNKgL+bRAjFakr4CvWhoo/tWPZThzw1ScrueEGyCj+4Z/1wT6dIgwQ==
   dependencies:
     hoist-non-react-statics "3.x.x"
     lodash "4.17.x"
