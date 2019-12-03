@@ -1,7 +1,7 @@
 import React from 'react'
 import { Provider } from 'mobx-react'
 import { Options } from 'react-native-navigation'
-import { RootStore } from 'store/rootStore'
+import { RootStore } from 'store/root.store'
 import { RootType } from 'navigation/types'
 
 export const createPrivateProvider = (

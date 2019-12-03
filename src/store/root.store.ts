@@ -6,7 +6,7 @@ import { ExampleStore } from './example.store'
 import { NavigationHelpers } from 'navigation/functions'
 import { publicRoute } from 'navigation/public/routes'
 
-class RootStore {
+export class RootStore {
   exampleStore: ExampleStore
 
   constructor() {

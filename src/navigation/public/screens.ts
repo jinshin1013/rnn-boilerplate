@@ -1,5 +1,5 @@
 import { Navigation } from 'react-native-navigation'
-import { RootStore } from 'store/rootStore'
+import { RootStore } from 'store/root.store'
 import { publicRoute } from './routes'
 import { createPublicProvider } from './provider'
 
