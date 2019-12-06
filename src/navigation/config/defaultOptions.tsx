@@ -2,6 +2,17 @@ import { Options } from 'react-native-navigation'
 import { Platform } from 'react-native'
 
 const shared: Options = {
+  topBar: {
+    title: {
+      color: 'black',
+    },
+    largeTitle: {
+      color: 'black',
+    },
+    background: {
+      color: 'white',
+    },
+  },
   animations: {
     push: { waitForRender: true },
     setRoot: { waitForRender: true },
