@@ -2,9 +2,7 @@ This repo is a react-native boilerplate project integrated with react-native-nav
 It's a minimal setup to get you started with the latest react native and react native navigation. I have added
 Mobx into this project, but it should be straightforward enough to replace to Redux or any other packages.
 
-The reason of bare minimal setup is that with the introduction of RN's autolinking, it has become easier than ever to integrate
-other native modules within the React Native app. So I don't see a necessity of the boilerplate as this repo integrate other
-native modules.
+The reason of bare minimal setup is that with the introduction of RN's autolinking, it has become easier than ever to integrate other native modules within the React Native app. So I don't see a necessity of the this boilerplate repo integrate other native modules.
 
 ### Current Dependencies
 
