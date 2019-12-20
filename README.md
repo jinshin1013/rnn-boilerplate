@@ -20,7 +20,7 @@ typescript: "3.7.2"
 ### Others
 
 - This project utilise ram bundles and inline require turned on.
-- This project also uses Hermes so `mobx@4.15.0` is used as Hermes does not support JavaScript Proxies.
+- This project also uses Hermes so `mobx@4.x.x` is used as Hermes does not support JavaScript Proxies.
 
 ### Project Structure
 
