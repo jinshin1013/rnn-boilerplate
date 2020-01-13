@@ -12,7 +12,7 @@
     "test": "jest"
   },
   "dependencies": {
-    "mobx": "4.15.1",
+    "mobx": "4.15.2",
     "mobx-persist": "0.4.1",
     "mobx-react": "6.1.4",
     "react": "16.9.0",

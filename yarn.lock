@@ -4903,10 +4903,10 @@ mobx-react@6.1.4:
   dependencies:
     mobx-react-lite "^1.4.2"
 
-mobx@4.15.1:
-  version "4.15.1"
-  resolved "https://registry.yarnpkg.com/mobx/-/mobx-4.15.1.tgz#492cba4c64682f6ea4e24d2d5e3c32e7b9ae1c12"
-  integrity sha512-WVRLD/OmEM0fLVPDfdNih4kY+a/ZuP//eK92yqH7uRb2e6H998qf8QqHn90LDc0aXsjcJnqHJ81oVZ+e18jskA==
+mobx@4.15.2:
+  version "4.15.2"
+  resolved "https://registry.yarnpkg.com/mobx/-/mobx-4.15.2.tgz#693b5a57d4d647380b61cad8bf5e1af75aac266e"
+  integrity sha512-UD13tY4g0SZPBM5zeKNLNrbUgnamd3d7ShF5ZPOeFBlKKY4e6sUYpdXt02nU1ONOUzYkRTT1FGMXeYwN8blErQ==
 
 morgan@^1.9.0:
   version "1.9.1"
