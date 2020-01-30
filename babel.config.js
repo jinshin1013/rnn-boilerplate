@@ -5,15 +5,7 @@ module.exports = {
       'module-resolver',
       {
         cwd: 'babelrc',
-        extensions: [
-          '.tsx',
-          '.ts',
-          '.ios.tsx',
-          '.android.tsx',
-          '.js',
-          '.ios.js',
-          '.android.js',
-        ],
+        extensions: ['.tsx', '.ts', '.ios.tsx', '.android.tsx', '.js', '.ios.js', '.android.js'],
         root: ['./src'],
       },
     ],

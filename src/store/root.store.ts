@@ -1,10 +1,10 @@
 import { createContext } from 'react'
 import { AsyncStorage, Alert } from 'react-native'
 import { create } from 'mobx-persist'
+import { NavigationHelpers } from 'routes/functions'
+import { PublicRoutes } from 'routes/routes'
 
 import { ExampleStore } from './example.store'
-import { NavigationHelpers } from 'navigation/functions'
-import { publicRoute } from 'navigation/public/routes'
 
 export class RootStore {
   exampleStore: ExampleStore
@@ -15,12 +15,12 @@ export class RootStore {
 
   login = () => {
     // Do app set up stuff here and navigate to logged in screen.
-    NavigationHelpers.setRoot({ name: publicRoute.example })
+    NavigationHelpers.setRoot({ name: PublicRoutes.Example })
   }
 
   logout = () => {
     // Do app clean up stuff here and navigate to logged out screen.
-    NavigationHelpers.setRoot({ name: publicRoute.example })
+    NavigationHelpers.setRoot({ name: PublicRoutes.Example })
   }
 
   /**

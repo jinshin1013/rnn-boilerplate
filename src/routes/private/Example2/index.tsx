@@ -1,9 +1,9 @@
-import React, { useCallback } from 'react'
+import React from 'react'
 import { Text, View, Button, ScrollView } from 'react-native'
 import { Navigation } from 'react-native-navigation'
-import { publicRoute } from 'navigation/public/routes'
-import { RootType } from 'navigation/types'
-import { NavigationHelpers } from 'navigation/functions'
+import { PrivateRoutes } from 'routes/routes'
+import { RootType } from 'routes/types'
+import { NavigationHelpers } from 'routes/functions'
 
 import styles from './styles'
 
@@ -12,15 +12,15 @@ interface Example2Props {
 }
 
 const Example2: RootType<Example2Props> = ({ componentId }) => {
-  const onNext = useCallback(() => {
+  const onNext = () => {
     return NavigationHelpers.pushTo(componentId, {
-      name: publicRoute.example,
+      name: PrivateRoutes.Example2,
     })
-  }, [componentId])
+  }
 
-  const onPopToRoot = useCallback(() => {
+  const onPopToRoot = () => {
     return Navigation.popToRoot(componentId)
-  }, [componentId])
+  }
 
   return (
     <ScrollView contentContainerStyle={{ flex: 1 }}>

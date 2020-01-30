@@ -1,8 +1,8 @@
-import React, { useCallback } from 'react'
+import React from 'react'
 import { Text, View, Button, ScrollView } from 'react-native'
-import { publicRoute } from 'navigation/public/routes'
-import { NavigationHelpers } from 'navigation/functions'
-import { RootType } from 'navigation/types'
+import { RootType } from 'routes/types'
+import { NavigationHelpers } from 'routes/functions'
+import { PrivateRoutes } from 'routes/routes'
 
 import styles from './styles'
 
@@ -11,16 +11,16 @@ interface ExampleProps {
 }
 
 const Example: RootType<ExampleProps> = ({ componentId }) => {
-  const onPress = useCallback(() => {
+  const onPress = () => {
     NavigationHelpers.pushTo(componentId, {
-      name: publicRoute.example2,
+      name: PrivateRoutes.Example2,
     })
-  }, [componentId])
+  }
 
   return (
     <ScrollView contentContainerStyle={{ flex: 1 }}>
       <View style={styles.container}>
-        <Text style={styles.welcome}>Welcome to Example 1!</Text>
+        <Text style={styles.welcome}>Welcome to Example 1 E2E!!</Text>
         <Button title="Navigate to Next" onPress={onPress} />
       </View>
     </ScrollView>
@@ -31,7 +31,7 @@ Example.options = {
   topBar: {
     noBorder: false,
     title: { text: 'Example 1' },
-    largeTitle: { visible: true, color: 'coral' },
+    largeTitle: { visible: true },
   },
 }
 
