@@ -9,12 +9,12 @@ The reason of bare minimal setup is that with the introduction of RN's autolinki
 ```js
 react: "16.9.0"
 react-native: "0.61.5"
-react-native-navigation: "4.0.8"
-mobx: "4.15.1"
-mobx-react: "6.1.4"
+react-native-navigation: "4.7.0"
+mobx: "4.15.4"
+mobx-react: "6.1.5"
 mobx-persist: "0.4.1"
 
-typescript: "3.7.2"
+typescript: "3.7.5"
 ```
 
 ### Others
@@ -26,28 +26,32 @@ typescript: "3.7.2"
 
 The structure of the project is as follows:
 
-```tsx
+```js
+// The first point of the app intialization.
+app/index.ts 
 
-src/
--- app/
----- index.ts       // Initial point of the app initialization
+// The folder for all routes related files.
+routes/
+  // RNN Navigation configurations.
+  config/ 
+  
+  // RNN registered screens. If you don't need to segment your screens with some
+  // sort of Auth logic (typically checking the existence of Auth Token in private screens),
+  // you can have different structure. 
+  private/
+  public/
+  
+  // A collection of helper functions for navigation.
+  function.ts
 
--- flows/           // Screens are grouped in different Flows. IE, Auth flow might have Login, Signup and Lock screens
----- Auth/
----- Dashboard/
+  // A collection of HOC component that wraps registering screens.
+	Provider.tsx
 
--- navigation/      // Files related to navigation
----- config/        // react-native-navigation configuration. I personally use it for common navigation styles
------- defaultOptions.ts // rnn navigation default options
------- noBorderTopbar.ts // rnn TopBar border style
------- rightAddButton.ts // rnn TopBar right button
+	// Importing and registering all screens to RNN.
+  routes.ts
+  screens.ts
+  types.ts
 
----- {public, private}/
------- routes.ts    // list of route strings
------- screens.ts   // Screen Map object with screen components and route name
------- provider.ts  // HOC provider which wraps each screen with Mobx Provider
-
--- store/
----- rootStore.ts   // Follow Mobx RootStore pattern
-
+// Following Mobx RootStore pattern.
+store/
 ```

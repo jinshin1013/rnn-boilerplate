@@ -4,8 +4,8 @@ export interface NavigationProps {
   componentId: string
 }
 
-export interface NavigationOptions<R> {
-  options?: ((props: R) => Options) | Options
+export interface NavigationOptions<Props> {
+  options?: ((props: Props) => Options) | Options
 }
 
-export type RootType<P> = React.FC<NavigationProps & P> & NavigationOptions<P>
+export type RootType<Props = {}> = React.FC<NavigationProps & Props> & NavigationOptions<Props>
