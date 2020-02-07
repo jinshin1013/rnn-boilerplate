@@ -21,7 +21,7 @@ export function registerPublicRoutes(rootStore: RootStore) {
   const publicRoutes = new Map().set(PublicRoutes.Example, Example)
 
   Array.from(publicRoutes).forEach(([routeName, component]) => {
-    Navigation.registerComponent(routeName, () => wrapPublicRoutes(component, rootStore))
+    Navigation.registerComponent(routeName, () => wrapPublicRoutes(component))
   })
 }
 
@@ -32,6 +32,6 @@ export function registerPrivateRoutes(rootStore: RootStore) {
   const privateRoutes = new Map().set(PrivateRoutes.Example2, Example2)
 
   Array.from(privateRoutes).forEach(([routeName, component]) => {
-    Navigation.registerComponent(routeName, () => wrapPrivateRoutes(component, rootStore))
+    Navigation.registerComponent(routeName, () => wrapPrivateRoutes(component))
   })
 }
