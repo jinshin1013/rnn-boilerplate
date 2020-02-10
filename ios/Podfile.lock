@@ -217,8 +217,10 @@ PODS:
     - React-cxxreact (= 0.61.5)
     - React-jsi (= 0.61.5)
     - ReactCommon/jscallinvoker (= 0.61.5)
-  - ReactNativeNavigation (4.8.3):
+  - ReactNativeNavigation (5.0.0-alpha.10):
     - React
+    - React-RCTImage
+    - React-RCTText
   - Yoga (1.14.0)
 
 DEPENDENCIES:
@@ -336,7 +338,7 @@ SPEC CHECKSUMS:
   React-RCTText: 9ccc88273e9a3aacff5094d2175a605efa854dbe
   React-RCTVibration: a49a1f42bf8f5acf1c3e297097517c6b3af377ad
   ReactCommon: 198c7c8d3591f975e5431bec1b0b3b581aa1c5dd
-  ReactNativeNavigation: 6ace2cedfb7e8fec72e225534ccfdf4e7c117391
+  ReactNativeNavigation: caeaf49d3cb09749683e697644b7568aaae2da10
   Yoga: f2a7cd4280bfe2cca5a7aed98ba0eb3d1310f18b
 
 PODFILE CHECKSUM: 9e9902f42c6182257a820fba98f14902fc86601e
