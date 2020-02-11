@@ -7,6 +7,11 @@ module.exports = {
     'prettier/@typescript-eslint',
     'prettier/react',
   ],
+  parser: '@typescript-eslint/parser',
+  parserOptions: {
+    project: './tsconfig.json',
+  },
+  plugins: ['@typescript-eslint'],
   rules: {
     // Eslint rules
     radix: 'off',
@@ -27,7 +32,7 @@ module.exports = {
     'react/destructuring-assignment': 'off',
     'react/no-array-index-key': 'off',
     'react/jsx-props-no-spreading': 'off',
-    'react/state-in-constructor': 'off'
+    'react/state-in-constructor': 'off',
 
     // TypeScript rules
     '@typescript-eslint/no-use-before-define': 'off',
