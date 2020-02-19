@@ -1,72 +1,81 @@
 package com.rnnboilerplate;
 
+import android.app.Application;
+import android.content.Context;
 import com.facebook.react.PackageList;
+import com.reactnativenavigation.NavigationApplication;
+import com.facebook.react.ReactInstanceManager;
 import com.facebook.react.ReactNativeHost;
+import com.reactnativenavigation.react.NavigationReactNativeHost;
 import com.facebook.react.ReactPackage;
-
+import com.facebook.soloader.SoLoader;
 import java.lang.reflect.InvocationTargetException;
 import java.util.List;
 
-import androidx.multidex.MultiDex;
 import android.content.Context;
-import androidx.annotation.Nullable;
-
-// Packages
-import com.reactnativenavigation.NavigationApplication;
-import com.reactnativenavigation.react.NavigationReactNativeHost;
-import com.reactnativenavigation.react.ReactGateway;
+import androidx.multidex.MultiDex;
 
 public class MainApplication extends NavigationApplication {
-    @Override
-    protected ReactGateway createReactGateway() {
-        ReactNativeHost host = new NavigationReactNativeHost(this, isDebug(), createAdditionalReactPackages()) {
-            @Override
-            protected String getJSMainModuleName() {
-                return "index";
-            }
-        };
-        return new ReactGateway(this, isDebug(), host);
-    }
 
-    @Override
-    public boolean isDebug() {
+  private final ReactNativeHost mReactNativeHost =
+      new NavigationReactNativeHost(this) {
+        @Override
+        public boolean getUseDeveloperSupport() {
           return BuildConfig.DEBUG;
-    }
+        }
 
-    @Nullable
-    @Override
-    public List<ReactPackage> createAdditionalReactPackages() {
-        @SuppressWarnings("UnnecessaryLocalVariable")
-        List<ReactPackage> packages = new PackageList(this).getPackages();
-        return packages;
-    }
+        @Override
+        protected List<ReactPackage> getPackages() {
+          @SuppressWarnings("UnnecessaryLocalVariable")
+          List<ReactPackage> packages = new PackageList(this).getPackages();
+          // Packages that cannot be autolinked yet can be added manually here, for example:
+          // packages.add(new MyReactNativePackage());
+          return packages;
+        }
 
-    @Override
-    public void onCreate() {
-        super.onCreate();
-        initializeFlipper(this);
-    }
+        @Override
+        protected String getJSMainModuleName() {
+          return "index";
+        }
+      };
 
-    @Override
-    protected void attachBaseContext(Context base) {
-        super.attachBaseContext(base);
-        MultiDex.install(this);
-    }
-      /**
-   * Loads Flipper in React Native templates.
+  @Override
+  public ReactNativeHost getReactNativeHost() {
+    return mReactNativeHost;
+  }
+
+  @Override
+  public void onCreate() {
+    super.onCreate();
+    
+    initializeFlipper(this, getReactNativeHost().getReactInstanceManager());
+  }
+
+  @Override
+  protected void attachBaseContext(Context base) {
+      super.attachBaseContext(base);
+      MultiDex.install(this);
+  }
+
+  /**
+   * Loads Flipper in React Native templates. Call this in the onCreate method with something like
+   * initializeFlipper(this, getReactNativeHost().getReactInstanceManager());
    *
    * @param context
+   * @param reactInstanceManager
    */
-   
-  private static void initializeFlipper(Context context) {
+  private static void initializeFlipper(
+      Context context, ReactInstanceManager reactInstanceManager) {
     if (BuildConfig.DEBUG) {
       try {
         /*
          We use reflection here to pick up the class that initializes Flipper,
         since Flipper library is not available in release mode
         */
-        Class<?> aClass = Class.forName("com.facebook.flipper.ReactNativeFlipper");
-        aClass.getMethod("initializeFlipper", Context.class).invoke(null, context);
+        Class<?> aClass = Class.forName("com.helloworld.ReactNativeFlipper");
+        aClass
+            .getMethod("initializeFlipper", Context.class, ReactInstanceManager.class)
+            .invoke(null, context, reactInstanceManager);
       } catch (ClassNotFoundException e) {
         e.printStackTrace();
       } catch (NoSuchMethodException e) {
