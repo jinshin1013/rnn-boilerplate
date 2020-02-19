@@ -17,6 +17,10 @@ addNewLine()
 
 log('** Running Jetify **')
 execute(`npx jetify`)
-
 addNewLine()
+
+log('** Installing Pods **')
+execute(`cd ios && pod install`)
+addNewLine()
+
 log('=== End of Post Install Script ===')
