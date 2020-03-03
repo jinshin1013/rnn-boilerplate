@@ -5794,6 +5794,13 @@ react-native-navigation@6.0.1:
     react-lifecycles-compat "2.0.0"
     tslib "1.9.3"
 
+react-native-v8@0.61.5-patch.2:
+  version "0.61.5-patch.2"
+  resolved "https://registry.yarnpkg.com/react-native-v8/-/react-native-v8-0.61.5-patch.2.tgz#0e9b08791dda1880f7cb8dc4a893457a41958085"
+  integrity sha512-huzOTXPuUVSsqEFCv7zlnNJtLCaGFOWbuiSRHEiy6KRbC3qzWVWVVLiO4yPROv90eWttPFKLLiqJMG1CArimOA==
+  dependencies:
+    v8-android "~8.80.0"
+
 react-native@0.61.5:
   version "0.61.5"
   resolved "https://registry.yarnpkg.com/react-native/-/react-native-0.61.5.tgz#6e21acb56cbd75a3baeb1f70201a66f42600bba8"
@@ -7086,6 +7093,16 @@ uuid@^3.3.2:
   version "3.4.0"
   resolved "https://registry.yarnpkg.com/uuid/-/uuid-3.4.0.tgz#b23e4358afa8a202fe7a100af1f5f883f02007ee"
   integrity sha512-HjSDRw6gZE5JMggctHBcjVak08+KEVhSIiDzFnT9S9aegmp85S/bReBVTb4QTFaRNptJ9kuYaNhnbNEOkbKb/A==
+
+v8-android-nointl@8.80.0:
+  version "8.80.0"
+  resolved "https://registry.yarnpkg.com/v8-android-nointl/-/v8-android-nointl-8.80.0.tgz#cdf1439b33ca32fc4df1b3249c940b33d429690f"
+  integrity sha512-7/3uLPZOwWcuouMDkWsCzGpKBHVhw5LbW/UQ77RpSbYvWEoTUO5AHOTKyvt/bJUGrwIMP4Op9uGJY6PBTDGwdQ==
+
+v8-android@~8.80.0:
+  version "8.80.0"
+  resolved "https://registry.yarnpkg.com/v8-android/-/v8-android-8.80.0.tgz#59a6bb67b745f19397bbdd5e5e8e084c6933ff52"
+  integrity sha512-Bkw48Bzgigm87WD4Yg9V/OGQmho5LngiwPKrMA0VmLQxWAUqW5axqaYFvxEuszdzSl9PIiceGhKTKEM2BM559Q==
 
 v8-compile-cache@^2.0.3:
   version "2.1.0"
