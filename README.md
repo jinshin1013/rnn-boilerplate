@@ -7,20 +7,22 @@ The reason of bare minimal setup is that with the introduction of RN's autolinki
 ### Current Dependencies
 
 ```js
-react: "16.9.0"
+react: "16.13.0"
 react-native: "0.61.5"
 react-native-navigation: "6.0.1"
-mobx: "4.15.4"
+mobx: "5.15.4"
 mobx-react-lite: "1.5.2"
 mobx-persist: "0.4.1"
+react-native-v8: "0.61.5-patch.2"
+v8-android-nointl: "8.80.0"
 
-typescript: "3.8.2"
+typescript: "3.8.3"
 ```
 
 ### Others
 
 - This project utilise ram bundles and inline require turned on.
-- This project also uses Hermes so `mobx@4.x.x` is used as Hermes does not support JavaScript Proxies.
+- This project uses react-native-v8 engine in favour of Hermes or default Android JSC.
 
 ### Project Structure
 
