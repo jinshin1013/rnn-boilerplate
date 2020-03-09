@@ -17,7 +17,7 @@
     "mobx-react-lite": "1.5.2",
     "react": "16.13.0",
     "react-native": "0.61.5",
-    "react-native-navigation": "6.1.0",
+    "react-native-navigation": "6.1.1",
     "react-native-v8": "0.61.5-patch.2",
     "v8-android-nointl": "8.80.1"
   },
