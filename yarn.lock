@@ -1153,10 +1153,10 @@
   resolved "https://registry.yarnpkg.com/@types/prop-types/-/prop-types-15.7.3.tgz#2ab0d5da2e5815f94b0b9d4b95d1e5f243ab2ca7"
   integrity sha512-KfRL3PuHmqQLOG+2tGpRO26Ctg+Cq1E01D2DMriKEATHgWLfeNDmq9e29Q9WIky0dQ3NPkd1mzYH8Lm936Z9qw==
 
-"@types/react-native@0.61.20":
-  version "0.61.20"
-  resolved "https://registry.yarnpkg.com/@types/react-native/-/react-native-0.61.20.tgz#937d8ed9768bdfc982e785563c07b4905ba0fd1f"
-  integrity sha512-EEtaP15gpDhpB1N8G3a+nWAzSa3HiLAZvfFkvczCluQXiB2vXAVJyxWls1i3Q9TERVWE3JbOuufgCY6bV1qTzw==
+"@types/react-native@0.61.23":
+  version "0.61.23"
+  resolved "https://registry.yarnpkg.com/@types/react-native/-/react-native-0.61.23.tgz#bff4e0311c229a5203eb37aacd4febf59f3e2980"
+  integrity sha512-upHmySsrVBDBokWWhYIKkKnpvadsHdioSjbBTu4xl7fjN0yb94KR5ngUOBXsyqAYqQzF+hP6qpvobG9M7Jr6hw==
   dependencies:
     "@types/react" "*"
 
@@ -1199,12 +1199,12 @@
   dependencies:
     "@types/yargs-parser" "*"
 
-"@typescript-eslint/eslint-plugin@2.22.0":
-  version "2.22.0"
-  resolved "https://registry.yarnpkg.com/@typescript-eslint/eslint-plugin/-/eslint-plugin-2.22.0.tgz#218ce6d4aa0244c6a40baba39ca1e021b26bb017"
-  integrity sha512-BvxRLaTDVQ3N+Qq8BivLiE9akQLAOUfxNHIEhedOcg8B2+jY8Rc4/D+iVprvuMX1AdezFYautuGDwr9QxqSxBQ==
+"@typescript-eslint/eslint-plugin@2.24.0":
+  version "2.24.0"
+  resolved "https://registry.yarnpkg.com/@typescript-eslint/eslint-plugin/-/eslint-plugin-2.24.0.tgz#a86cf618c965a462cddf3601f594544b134d6d68"
+  integrity sha512-wJRBeaMeT7RLQ27UQkDFOu25MqFOBus8PtOa9KaT5ZuxC1kAsd7JEHqWt4YXuY9eancX0GK9C68i5OROnlIzBA==
   dependencies:
-    "@typescript-eslint/experimental-utils" "2.22.0"
+    "@typescript-eslint/experimental-utils" "2.24.0"
     eslint-utils "^1.4.3"
     functional-red-black-tree "^1.0.1"
     regexpp "^3.0.0"
@@ -1239,6 +1239,15 @@
     "@typescript-eslint/typescript-estree" "2.22.0"
     eslint-scope "^5.0.0"
 
+"@typescript-eslint/experimental-utils@2.24.0":
+  version "2.24.0"
+  resolved "https://registry.yarnpkg.com/@typescript-eslint/experimental-utils/-/experimental-utils-2.24.0.tgz#a5cb2ed89fedf8b59638dc83484eb0c8c35e1143"
+  integrity sha512-DXrwuXTdVh3ycNCMYmWhUzn/gfqu9N0VzNnahjiDJvcyhfBy4gb59ncVZVxdp5XzBC77dCncu0daQgOkbvPwBw==
+  dependencies:
+    "@types/json-schema" "^7.0.3"
+    "@typescript-eslint/typescript-estree" "2.24.0"
+    eslint-scope "^5.0.0"
+
 "@typescript-eslint/parser@2.22.0", "@typescript-eslint/parser@^2.19.0":
   version "2.22.0"
   resolved "https://registry.yarnpkg.com/@typescript-eslint/parser/-/parser-2.22.0.tgz#8eeb6cb6de873f655e64153397d4790898e149d0"
@@ -1271,6 +1280,19 @@
   version "2.22.0"
   resolved "https://registry.yarnpkg.com/@typescript-eslint/typescript-estree/-/typescript-estree-2.22.0.tgz#a16ed45876abf743e1f5857e2f4a1c3199fd219e"
   integrity sha512-2HFZW2FQc4MhIBB8WhDm9lVFaBDy6h9jGrJ4V2Uzxe/ON29HCHBTj3GkgcsgMWfsl2U5as+pTOr30Nibaw7qRQ==
+  dependencies:
+    debug "^4.1.1"
+    eslint-visitor-keys "^1.1.0"
+    glob "^7.1.6"
+    is-glob "^4.0.1"
+    lodash "^4.17.15"
+    semver "^6.3.0"
+    tsutils "^3.17.1"
+
+"@typescript-eslint/typescript-estree@2.24.0":
+  version "2.24.0"
+  resolved "https://registry.yarnpkg.com/@typescript-eslint/typescript-estree/-/typescript-estree-2.24.0.tgz#38bbc8bb479790d2f324797ffbcdb346d897c62a"
+  integrity sha512-RJ0yMe5owMSix55qX7Mi9V6z2FDuuDpN6eR5fzRJrp+8in9UF41IGNQHbg5aMK4/PjVaEQksLvz0IA8n+Mr/FA==
   dependencies:
     debug "^4.1.1"
     eslint-visitor-keys "^1.1.0"
@@ -1324,9 +1346,9 @@ acorn-walk@^6.0.1:
   integrity sha512-7evsyfH1cLOCdAzZAd43Cic04yKydNx0cF+7tiA19p1XnLLPU4dpCQOqpjqwokFe//vS0QqfqqjCS2JkiIs0cA==
 
 acorn@^6.0.1:
-  version "6.4.0"
-  resolved "https://registry.yarnpkg.com/acorn/-/acorn-6.4.0.tgz#b659d2ffbafa24baf5db1cdbb2c94a983ecd2784"
-  integrity sha512-gac8OEcQ2Li1dxIEWGZzsp2BitJxwkwcOm0zHAJLcPJaVvm58FRnk6RkuLRpU1EujipU2ZFODv2P9DLMfnV8mw==
+  version "6.4.1"
+  resolved "https://registry.yarnpkg.com/acorn/-/acorn-6.4.1.tgz#531e58ba3f51b9dacb9a6646ca4debf5b14ca474"
+  integrity sha512-ZVA9k326Nwrj3Cj9jlh3wGFutC2ZornPNARZwsNYqQYgN0EsV2d53w5RN/co65Ohn4sUAUtb1rSUAOD6XN9idA==
 
 acorn@^7.1.0:
   version "7.1.0"
@@ -5809,12 +5831,12 @@ react-native-navigation@6.3.1:
     react-lifecycles-compat "2.0.0"
     tslib "1.9.3"
 
-react-native-v8@0.61.5-patch.2:
-  version "0.61.5-patch.2"
-  resolved "https://registry.yarnpkg.com/react-native-v8/-/react-native-v8-0.61.5-patch.2.tgz#0e9b08791dda1880f7cb8dc4a893457a41958085"
-  integrity sha512-huzOTXPuUVSsqEFCv7zlnNJtLCaGFOWbuiSRHEiy6KRbC3qzWVWVVLiO4yPROv90eWttPFKLLiqJMG1CArimOA==
+react-native-v8@0.61.5-patch.3:
+  version "0.61.5-patch.3"
+  resolved "https://registry.yarnpkg.com/react-native-v8/-/react-native-v8-0.61.5-patch.3.tgz#c5f4f235f5b9922f5f982811d293c890d45fecd5"
+  integrity sha512-1cCc/zRK9uZ6Z/++aLPBMf5h78B74+qMdyKlJRDG9uREtd6BiAPvtqkW2QN37SYAe4IjH23BfO85rnpBGrnfgA==
   dependencies:
-    v8-android "~8.80.0"
+    v8-android "~8.80.1"
 
 react-native@0.61.5:
   version "0.61.5"
@@ -7114,10 +7136,10 @@ v8-android-nointl@8.80.1:
   resolved "https://registry.yarnpkg.com/v8-android-nointl/-/v8-android-nointl-8.80.1.tgz#0f86cf12b388cdc60d705e351638f59ca2b05ed8"
   integrity sha512-zsxGJKguE6aBKk7E6n6ezeTJO19kPlW26Xv5rpChcEa7I+qEYV6sb2FawoPigzPQ1jrDJ/YxrPJHXfr8rk4ddw==
 
-v8-android@~8.80.0:
-  version "8.80.0"
-  resolved "https://registry.yarnpkg.com/v8-android/-/v8-android-8.80.0.tgz#59a6bb67b745f19397bbdd5e5e8e084c6933ff52"
-  integrity sha512-Bkw48Bzgigm87WD4Yg9V/OGQmho5LngiwPKrMA0VmLQxWAUqW5axqaYFvxEuszdzSl9PIiceGhKTKEM2BM559Q==
+v8-android@~8.80.1:
+  version "8.80.1"
+  resolved "https://registry.yarnpkg.com/v8-android/-/v8-android-8.80.1.tgz#ec4c9be7656445377e6c080ebc39b1ab7e95fbce"
+  integrity sha512-YtJEYC4cEr/EJjCAllQN1T+PX+XtcrCCBXJv+dLdzxxRtVKkHlf8kAxyriXUOtGmiMtgzlz+d8hQugVPdq8ZfA==
 
 v8-compile-cache@^2.0.3:
   version "2.1.0"
