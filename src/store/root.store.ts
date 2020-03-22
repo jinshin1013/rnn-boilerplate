@@ -1,5 +1,6 @@
 import { createContext } from 'react'
-import { AsyncStorage, Alert } from 'react-native'
+import { Alert } from 'react-native'
+import AsyncStorage from '@react-native-community/async-storage'
 import { create } from 'mobx-persist'
 import { NavigationHelpers } from 'routes/functions'
 import { PublicRoutes } from 'routes/routes'
