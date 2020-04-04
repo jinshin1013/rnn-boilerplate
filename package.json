@@ -17,9 +17,9 @@
     "mobx-persist": "0.4.1",
     "mobx-react-lite": "1.5.2",
     "react": "16.13.1",
-    "react-native": "0.61.5",
+    "react-native": "0.62.1",
     "react-native-navigation": "6.4.0",
-    "react-native-v8": "0.61.5-patch.3",
+    "react-native-v8": "0.62.0-patch.0",
     "v8-android-nointl": "8.80.1"
   },
   "devDependencies": {
@@ -29,7 +29,7 @@
     "@react-native-community/eslint-config": "1.0.0",
     "@types/jest": "25.2.1",
     "@types/react": "16.9.32",
-    "@types/react-native": "0.62.0",
+    "@types/react-native": "0.62.1",
     "@types/react-test-renderer": "16.9.2",
     "@typescript-eslint/eslint-plugin": "2.26.0",
     "@typescript-eslint/parser": "2.26.0",

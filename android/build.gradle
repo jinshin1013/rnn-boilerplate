@@ -17,7 +17,7 @@ buildscript {
         jcenter()
     }
     dependencies {
-        classpath('com.android.tools.build:gradle:3.4.2')
+        classpath('com.android.tools.build:gradle:3.5.3')
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlinVersion"
     }
 }
@@ -29,7 +29,7 @@ allprojects {
         mavenLocal()
         jcenter()
         maven { url("$rootDir/../node_modules/react-native-v8/dist") }
-        maven { url 'https://jitpack.io' }
+        maven { url 'https://www.jitpack.io' }
         maven {
             url("$rootDir/../node_modules/v8-android-nointl/dist")
         }
