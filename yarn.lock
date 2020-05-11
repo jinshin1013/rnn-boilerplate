@@ -239,11 +239,6 @@
   resolved "https://registry.yarnpkg.com/@babel/helper-validator-identifier/-/helper-validator-identifier-7.9.5.tgz#90977a8e6fbf6b431a7dc31752eee233bf052d80"
   integrity sha512-/8arLKUFq882w4tWGj9JYzRpAlZgiWUJ+dtteNTDqrRBz9Iguck9Rn3ykuBDoUwh2TO4tSAJlrxDUOXWklJe4g==
 
-"@babel/helper-validator-identifier@^7.9.5":
-  version "7.9.5"
-  resolved "https://registry.yarnpkg.com/@babel/helper-validator-identifier/-/helper-validator-identifier-7.9.5.tgz#90977a8e6fbf6b431a7dc31752eee233bf052d80"
-  integrity sha512-/8arLKUFq882w4tWGj9JYzRpAlZgiWUJ+dtteNTDqrRBz9Iguck9Rn3ykuBDoUwh2TO4tSAJlrxDUOXWklJe4g==
-
 "@babel/helper-wrap-function@^7.8.3":
   version "7.8.3"
   resolved "https://registry.yarnpkg.com/@babel/helper-wrap-function/-/helper-wrap-function-7.8.3.tgz#9dbdb2bb55ef14aaa01fe8c99b629bd5352d8610"
@@ -5883,10 +5878,10 @@ react-lifecycles-compat@2.0.0:
   resolved "https://registry.yarnpkg.com/react-lifecycles-compat/-/react-lifecycles-compat-2.0.0.tgz#71d9c4cde47114c4102454f76da055c2bc48c948"
   integrity sha512-txfpPCQYiazVdcbMRhatqWKcAxJweUu2wDXvts5/7Wyp6+Y9cHojqXHsLPEckzutfHlxZhG8Oiundbmp8Fd6eQ==
 
-react-native-navigation@6.5.0:
-  version "6.5.0"
-  resolved "https://registry.yarnpkg.com/react-native-navigation/-/react-native-navigation-6.5.0.tgz#8a1307d60d2a58682fd6f6156f3a31a945e259ff"
-  integrity sha512-iW5/vETRVJh6xRCavWzSVorJAbjIimHE1W4WYnvtedaM2+mum9qLNNOM7Z/il6HG5Xm6M4Zf+IfzZgfWjcndJA==
+react-native-navigation@6.6.0:
+  version "6.6.0"
+  resolved "https://registry.yarnpkg.com/react-native-navigation/-/react-native-navigation-6.6.0.tgz#f12b92a946b30f9ee7ff9eae92b32b74bbb2db2a"
+  integrity sha512-qKgQmUs1UzFasX1qIN9Dh6+Brl/N9pKBjb47q3kV+s3EIbw4FBCK8kk+Ubqecnwvt9emCcwmT6pg0DNaApio6A==
   dependencies:
     hoist-non-react-statics "3.x.x"
     lodash "4.17.x"
