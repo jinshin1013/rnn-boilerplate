@@ -9,7 +9,7 @@ The reason of bare minimal setup is that with the introduction of RN's autolinki
 ```js
 react: "16.13.1"
 react-native: "0.62.2"
-react-native-navigation: "6.6.0"
+react-native-navigation: "6.6.1"
 mobx: "5.15.4"
 mobx-react-lite: "2.0.7"
 mobx-persist: "0.4.1"
