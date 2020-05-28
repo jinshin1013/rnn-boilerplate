@@ -17,7 +17,7 @@ type WrappedComponentType = React.FC & { options?: Options }
  * You can also add things like global event listener or anything global really.
  */
 export const wrapPublicRoutes = (WrappedComponent: WrappedComponentType) => {
-  const HOC: RootType = props => {
+  const HOC: RootType = (props) => {
     return <WrappedComponent {...props} />
   }
 
@@ -34,7 +34,7 @@ export const wrapPublicRoutes = (WrappedComponent: WrappedComponentType) => {
  * Should also perform Auth check here.
  */
 export const wrapPrivateRoutes = (WrappedComponent: WrappedComponentType) => {
-  const HOC: RootType = props => {
+  const HOC: RootType = (props) => {
     // Do auth check here. Logout if user has no auth token.
 
     return <WrappedComponent {...props} />

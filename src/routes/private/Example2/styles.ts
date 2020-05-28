@@ -1,9 +1,8 @@
 import { StyleSheet, ViewStyle, TextStyle } from 'react-native'
 
 interface Style {
-  container: ViewStyle,
+  container: ViewStyle
   welcome: TextStyle
-
 }
 
 export default StyleSheet.create<Style>({
