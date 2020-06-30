@@ -23,7 +23,7 @@
     "v8-android-nointl": "8.80.1"
   },
   "devDependencies": {
-    "@babel/core": "7.10.3",
+    "@babel/core": "7.10.4",
     "@babel/plugin-proposal-decorators": "7.10.3",
     "@babel/runtime": "7.10.3",
     "@react-native-community/eslint-config": "2.0.0",
