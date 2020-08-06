@@ -3,7 +3,6 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
-    "postinstall": "node ./script/postInstall",
     "start": "export RN_FLAVOUR='' && react-native start",
     "start:nocache": "export RN_FLAVOUR='' && react-native start --reset-cache",
     "start:e2e": "export RN_FLAVOUR=E2E && react-native start --reset-cache",
@@ -29,7 +28,7 @@
     "@react-native-community/eslint-config": "2.0.0",
     "@types/jest": "26.0.9",
     "@types/react": "16.9.44",
-    "@types/react-native": "0.62.14",
+    "@types/react-native": "0.63.4",
     "@types/react-test-renderer": "16.9.3",
     "@typescript-eslint/eslint-plugin": "2.34.0",
     "@typescript-eslint/parser": "2.34.0",
