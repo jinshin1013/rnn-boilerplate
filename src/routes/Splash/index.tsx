@@ -13,7 +13,9 @@ export const RouteSplash: NavigationFunctionComponent<RouteSplashProps> = observ
 
   useEffect(() => {
     hydrateStores().then(() => {
-      rootStore.login()
+      setTimeout(() => {
+        rootStore.login()
+      }, 500)
     })
   }, [])
 

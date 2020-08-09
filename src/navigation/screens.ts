@@ -4,10 +4,9 @@ import { Routes } from 'navigation/routes'
 
 import { RouteSplash } from 'routes/Splash'
 import { RouteHome } from 'routes/Home'
-import { RouteNotice } from 'routes/Notice'
 
 export const registerRoutes = () => {
-  const routes = new Map().set(Routes.Splash, RouteSplash).set(Routes.Home, RouteHome).set(Routes.Notice, RouteNotice)
+  const routes = new Map().set(Routes.Splash, RouteSplash).set(Routes.Home, RouteHome)
 
   Navigation.setLazyComponentRegistrator((componentName) => {
     if (routes.has(componentName)) {
