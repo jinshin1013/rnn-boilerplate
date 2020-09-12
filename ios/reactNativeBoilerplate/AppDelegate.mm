@@ -7,15 +7,15 @@
 #import <React/RCTCxxBridgeDelegate.h>
 #import <ReactCommon/RCTTurboModuleManager.h>
 
-#import <React/JSCExecutorFactory.h>
-#import <React/RCTImageLoader.h>
-#import <React/RCTLocalAssetImageLoader.h>
-#import <React/RCTGIFImageDecoder.h>
-#import <React/RCTNetworking.h>
-#import <React/RCTHTTPRequestHandler.h>
 #import <React/RCTDataRequestHandler.h>
 #import <React/RCTFileRequestHandler.h>
-#import <RNReanimated/RETurboModuleProvider.h>
+#import <React/RCTHTTPRequestHandler.h>
+#import <React/RCTNetworking.h>
+#import <React/RCTLocalAssetImageLoader.h>
+#import <React/RCTGIFImageDecoder.h>
+#import <React/RCTImageLoader.h>
+#import <React/JSCExecutorFactory.h>
+#import <RNReanimated/REATurboModuleProvider.h>
 #import <RNReanimated/REAModule.h>
 
 #ifdef FB_SONARKIT_ENABLED
@@ -88,20 +88,20 @@ static void InitializeFlipper(UIApplication *application) {
 
 - (Class)getModuleClassFromName:(const char *)name
 {
- return facebook::react::RETurboModuleClassProvider(name);
+ return facebook::react::REATurboModuleClassProvider(name);
 }
 
 - (std::shared_ptr<facebook::react::TurboModule>)getTurboModule:(const std::string &)name
                                                      jsInvoker:(std::shared_ptr<facebook::react::CallInvoker>)jsInvoker
 {
- return facebook::react::RETurboModuleProvider(name, jsInvoker);
+ return facebook::react::REATurboModuleProvider(name, jsInvoker);
 }
 
 - (std::shared_ptr<facebook::react::TurboModule>)getTurboModule:(const std::string &)name
                                                       instance:(id<RCTTurboModule>)instance
                                                      jsInvoker:(std::shared_ptr<facebook::react::CallInvoker>)jsInvoker
 {
- return facebook::react::RETurboModuleProvider(name, instance, jsInvoker);
+ return facebook::react::REATurboModuleProvider(name, instance, jsInvoker);
 }
 
 - (id<RCTTurboModule>)getModuleInstanceFromClass:(Class)moduleClass
