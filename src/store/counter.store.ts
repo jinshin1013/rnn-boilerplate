@@ -1,26 +1,30 @@
-import { makeAutoObservable } from 'mobx'
+import { observable, action, computed, makeObservable } from 'mobx'
+import { persist } from 'mobx-persist'
 
 export class CounterStore {
   constructor() {
-    makeAutoObservable(this)
+    makeObservable(this)
   }
 
-  count = 0
-  incrementCount = () => {
+  @persist @observable count = 0
+
+  @action.bound
+  incrementCount() {
     this.count += 1
   }
-  decrementCount = () => {
+
+  @action.bound
+  decrementCount() {
     this.count -= 1
   }
+
+  @computed
   get countDescription() {
     return `The current count is ${this.count}`
   }
 
-  reset = () => {
+  @action.bound
+  reset() {
     this.count = 0
   }
-}
-
-export const counterStoreSchema = {
-  count: true,
 }

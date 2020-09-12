@@ -1,8 +1,8 @@
 import { createContext, useContext } from 'react'
 import AsyncStorage from '@react-native-community/async-storage'
-import { create, persist } from 'mobx-persist'
+import { create } from 'mobx-persist'
 
-import { CounterStore, counterStoreSchema } from 'store/counter.store'
+import { CounterStore } from 'store/counter.store'
 import { Navigation } from 'navigation/functions'
 import { Routes } from 'navigation/routes'
 
@@ -10,9 +10,8 @@ class RootStore {
   counterStore: CounterStore
 
   constructor() {
-    this.counterStore = persist(counterStoreSchema)(new CounterStore())
+    this.counterStore = new CounterStore()
   }
-
   login = () => {
     // Here do some auth check to navigate to the right route.
     return Navigation.setRoot({

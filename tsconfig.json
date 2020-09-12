@@ -11,6 +11,8 @@
     "moduleResolution": "node",
     "allowSyntheticDefaultImports": true,
     "esModuleInterop": true,
+    "experimentalDecorators": true,
+    "useDefineForClassFields": true,
     "baseUrl": "./src",
     "paths": {
       "src/*": ["src/*"]
