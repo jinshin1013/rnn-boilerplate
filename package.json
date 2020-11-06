@@ -14,7 +14,7 @@
     "hermes-engine": "0.5.2-rc1",
     "mobx": "6.0.0-rc.7",
     "mobx-persist": "0.4.1",
-    "mobx-react-lite": "2.2.1",
+    "mobx-react-lite": "3.1.2",
     "react": "16.13.1",
     "react-native": "0.63.2",
     "react-native-navigation": "7.0.0",
