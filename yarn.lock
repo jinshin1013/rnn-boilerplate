@@ -5151,10 +5151,10 @@ mobx-persist@0.4.1:
   dependencies:
     serializr "^1.1.11"
 
-mobx-react-lite@2.2.1:
-  version "2.2.1"
-  resolved "https://registry.yarnpkg.com/mobx-react-lite/-/mobx-react-lite-2.2.1.tgz#9c05dd799005d29ec1671ae86ca30b3ab5411055"
-  integrity sha512-SxOuV7Q1MLdj9uRUG8N1x9lBa4cS9c+YwlcrvrBVuCTlNrgRrrHuydfBHW/0f3pALhvGhcg+JEvf1gMWOuej4A==
+mobx-react-lite@3.1.1:
+  version "3.1.1"
+  resolved "https://registry.yarnpkg.com/mobx-react-lite/-/mobx-react-lite-3.1.1.tgz#19084052597dc541e975564f30eb754ab10a4f8b"
+  integrity sha512-Gq3araowXNg39sJyamV+F7LoMuXjXW/Ds5RypJzJPghDE5iEdX1lHf+g08sLDoqSxQAemoYcaMLvMmlVXwupbQ==
 
 mobx@6.0.0-rc.7:
   version "6.0.0-rc.7"
