@@ -18,7 +18,7 @@
     "react": "16.13.1",
     "react-native": "0.63.2",
     "react-native-navigation": "7.0.0",
-    "react-native-reanimated": "2.0.0-alpha.6",
+    "react-native-reanimated": "2.0.0-rc.3",
     "react-native-ui-block": "0.0.3"
   },
   "devDependencies": {
